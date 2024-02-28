@@ -1,0 +1,3 @@
+C:/Coding/Nettverksprog/task2/cmake-build-debug/CMakeFiles/task2.dir
+C:/Coding/Nettverksprog/task2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Coding/Nettverksprog/task2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
