@@ -23,11 +23,11 @@ app.post('/compile', (req, res) => {
     // Bygger en absolutt sti for Docker volum-montering
     const currentDir = path.resolve(__dirname);
 
-    console.log("Noe melding her");
+    console.log("Noe melding her: " + currentDir);
 
     // Kjører Docker-kommando for å kompilere og kjøre C++ koden
     //const dockerCommand = `docker run --rm -v "${currentDir}:/src" venv_ubuntu_1 g++ /src/source.cpp -o /src/output && /src/output`;
-    const dockerCommand = 'docker run --rm -v "C:/Coding/Nettverksprog/task5/src:/src" venv_ubuntu_1 bash -c "g++ /src/source.cpp -o /src/output && /src/output';
+    const dockerCommand = `docker run --rm -v "${currentDir}:/src" venv_ubuntu_1 bash -c "g++ /src/source.cpp -o /src/output && /src/output"`;
 
     exec(dockerCommand, (error, stdout, stderr) => {
         if (error) {
