@@ -11,7 +11,7 @@ const httpServer = net.createServer((connection) => {
             <title>WebSocket Test</title>
         </head>
         <body>
-            <h2>Send a message to the server via WebSocket</h2>
+            <h2>Send a message to the server via WebSocket :D</h2>
             <textarea id="txt" cols="40" rows="5"></textarea>
             <button id="send-btn" onclick="sendMessage()">Send Message</button>
             <div id="messages">Messages: <br></div>
